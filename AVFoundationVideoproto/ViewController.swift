@@ -15,7 +15,7 @@ class ViewController: UIViewController,AVCaptureFileOutputRecordingDelegate {
     
     @IBOutlet weak var Preview: UIView!
     
-
+    // MARK: member
     //セッション
     var session: AVCaptureSession!
     //ビデオデバイス
@@ -69,7 +69,7 @@ class ViewController: UIViewController,AVCaptureFileOutputRecordingDelegate {
 //
 //    }
 
-        
+    // MARK: method
     func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
         print("録画完了")
     }

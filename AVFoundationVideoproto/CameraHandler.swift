@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import AVFoundation
+
+ final class CameraHandler {
+    // MARK: member
+    let session: AVCaptureSession
+    
+    // MARK: initialize
+    init(session: AVCaptureSession){
+        self.session = session
+    }
+    
+}
